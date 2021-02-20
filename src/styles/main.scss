@@ -7,3 +7,8 @@ body {
   text-align: center;
   margin-top: 100px;
 }
+
+.card-holder {
+  display: flex;
+  flex-flow: wrap;
+}
