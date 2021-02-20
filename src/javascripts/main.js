@@ -16,10 +16,10 @@ const printBearForm = () => {
     <input type="text" class="form-control" id="name" placeholder="Add bear name">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">Bear Image URL</label>
-    <input type="text" class="form-control" id="imageUrl" placeholder="Add a bear image">
+    <label for="imageUrl">Bear Image</label>
+    <input type="url" class="form-control" id="image" placeholder="Add a bear image URL">
   </div>
-  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" id="add" class="btn btn-primary">Add Bear</button>
   </form>`;
 
   printToDom('#bearForm', domString);
@@ -29,13 +29,12 @@ const addBear = (taco) => {
   let domString = '';
   taco.forEach((card, i) => {
     domString += `<div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="{card.imageUrl}" alt="Bear Image">
-                  <div class="card-body">
-                    <h5 class="card-title">${card.name}</h5>
-                    <p class="card-text">Some quick example text to build on the card title & content.</p>
-                    <button type="button" id="addBear" class="btn btn-primary" id="${i}">Add Bear</button>
-                  </div>
-              </div>`;
+                    <div class="card-body">
+                      <img class="card-img-top" src="${card.image}" alt="Bear Image" width="100" height="150">
+                      <h5 class="card-title">${card.name}</h5>
+                      <button type="button" id="delete" class="btn btn-primary" id="${i}">Remove Bear</button>
+                    </div>
+                  </div>`;
   });
   printToDom('#cardHolder', domString);
 };
@@ -43,7 +42,7 @@ const addBear = (taco) => {
 const getBearInfo = (e) => {
   e.preventDefault();
   const name = document.querySelector('#name').value;
-  const image = document.querySelector('#imageUrl').value;
+  const image = document.querySelector('#image').value;
 
   const obj = {
     name,
@@ -54,11 +53,11 @@ const getBearInfo = (e) => {
 
   addBear(bears);
 
-  // document.querySelector('#form').reset();
+  document.querySelector('form').reset();
 };
 
 const buttonEvents = () => {
-  document.querySelector('#submit').addEventListener('click', getBearInfo);
+  document.querySelector('#add').addEventListener('click', getBearInfo);
 };
 
 const init = () => {
