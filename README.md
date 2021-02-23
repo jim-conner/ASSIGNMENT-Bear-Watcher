@@ -10,5 +10,5 @@ https://github.com/jim-conner/ASSIGNMENT-Bear-Watcher/projects/1
 
 ### Features
 ### Screenshots
-![ ]./Bear-watcher.png
+![]https://github.com/jim-conner/ASSIGNMENT-Bear-Watcher/blob/main/Bear-watcher.png
 ### Loom video
