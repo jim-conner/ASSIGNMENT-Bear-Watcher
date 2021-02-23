@@ -2,13 +2,25 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/25/17/58/nature-3630553_1280.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-color: grey;
-  color: brown;
+  color: grey;
   text-align: center;
   margin-top: 100px;
 }
 
+.form {
+  display: flex;
+  justify-content: center;
+}
+
 .card-holder {
   display: flex;
+  justify-content: center;
   flex-flow: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
 }
