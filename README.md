@@ -8,7 +8,10 @@ https://www.figma.com/file/ObHj5NjD2K6KsRHfLOMNWJ/Bear-Watcher-frames?node-id=2%
 ### Project Board
 https://github.com/jim-conner/ASSIGNMENT-Bear-Watcher/projects/1
 
+### Loom video
+
 ### Features
+- User can add a bear card with name and image url to the "Bear River"
+- Project features Modualrized code (a first for Jim!)
 ### Screenshots
 ![Bear Screencap](https://github.com/jim-conner/ASSIGNMENT-Bear-Watcher/blob/main/Bear-watcher.png)
-### Loom video
