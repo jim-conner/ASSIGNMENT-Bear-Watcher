@@ -1,7 +1,8 @@
 # ASSIGNMENT-Bear-Watcher
 
 ## Overview 
-Bear Watcher 
+Bear Watcher allows the user add Bears to the River, including the name and an image link.  
+This web app is also a lesson in how to modularize code and use import/export features of JS.
 ### Figma frames
 https://www.figma.com/file/ObHj5NjD2K6KsRHfLOMNWJ/Bear-Watcher-frames?node-id=0%3A1
 
