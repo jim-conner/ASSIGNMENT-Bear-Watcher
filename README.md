@@ -12,6 +12,6 @@ https://github.com/jim-conner/ASSIGNMENT-Bear-Watcher/projects/1
 https://www.loom.com/share/e0d746bfa7854dc190a0dd74abce30cc
 ### Features
 - User can add a bear card with name and image url to the "Bear River"
-- Project features Modualrized code (a first for Jim!)
+- Project features Modualarized code (a first for Jim!)
 ### Screenshots
 ![Bear Screencap](https://github.com/jim-conner/ASSIGNMENT-Bear-Watcher/blob/main/Bear-watcher.png)
