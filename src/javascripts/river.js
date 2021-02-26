@@ -1,6 +1,7 @@
 import printToDom from './printToDom';
 
 const bears = [];
+const removedBears = [];
 
 const addBear = (taco) => {
   let domString = '';
@@ -35,4 +36,14 @@ const getBearInfo = (e) => {
   document.querySelector('form').reset();
 };
 
-export default getBearInfo;
+const removeBear = (e) => {
+  const targetType = e.target.type;
+  const targetId = e.target.id;
+  if (targetType === 'button') {
+    const deletedBear = bears.splice(targetId, 1);
+    removedBears.push(...deletedBear);
+  }
+  addBear(bears);
+};
+
+export { getBearInfo, removeBear };
